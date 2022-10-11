@@ -28,9 +28,9 @@ public class Empleado {
 	public static float calculoNominaNeta(float nominaBruta){
 		double retencion=0;
 		
-		if(nominaBruta>2500)
+		if(nominaBruta>=2500)
 			retencion=0.18;
-		else if (nominaBruta>2000)
+		else if (nominaBruta>=2100)
 			retencion=0.15;
 		
 		return nominaBruta*(1-(float)retencion);
