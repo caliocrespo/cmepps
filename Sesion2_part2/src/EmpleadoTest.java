@@ -45,7 +45,11 @@ class EmpleadoTest {
 	
 	@Test
 	void testCalculoNominaBrutaSinExtra1600() {
-		
+		horasExtra=0;
+		ventaMes=1600;
+		float valorEsperado=2100;
+		float resutado=Empleado.calculoNominaBruta(Empleado.TipoEmpleado.Encargado, ventaMes, horasExtra);
+		assertEquals(valorEsperado, resutado);
 	}
 
 	@Test
